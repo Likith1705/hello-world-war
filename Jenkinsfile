@@ -6,12 +6,12 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "rm -rf hello-world-war"
-                sh "git clone https://github.com/Likith1705/hello-world-war.git"
+               // sh "git clone https://github.com/Likith1705/hello-world-war.git"
             }
         }
-        stage('Test') {
+        stage('Build') {
             steps {
-                echo 'Testing..'
+                sh "ls"
             }
         }
         stage('Deploy') {
